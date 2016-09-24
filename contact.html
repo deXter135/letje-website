@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
@@ -16,21 +16,21 @@
   <div class="navbar-fixed">
     <nav class="blauw" role="navigation">
       <div class="nav-wrapper container">
-        <a href="index.html" class="brand-logo"><img src="img/logo_inv.png" class="logo-navbar"/></a>
+        <a href="http://www.letje.nl" class="brand-logo"><img src="img/logo_inv.png" class="logo-navbar"/></a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="aanbod.html">Aanbod</a></li>
-          <li><a href="voorbeelden.html">Voorbeelden</a></li>
-          <li><a href="contact.html" class="activenav">Contact</a></li>
-          <li><a href="overons.html">Over ons</a></li>
+          <li><a href="http://www.letje.nl">Home</a></li>
+          <li><a href="aanbod">Aanbod</a></li>
+          <li><a href="voorbeelden">Voorbeelden</a></li>
+          <li><a href="contact" class="activenav">Contact</a></li>
+          <li><a href="overons">Over ons</a></li>
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="aanbod.html">Aanbod</a></li>
-          <li><a href="voorbeelden.html">Voorbeelden</a></li>
-          <li><a href="contact.html" class="activenavsmall">Contact</a></li>
-          <li><a href="overons.html">Over ons</a></li>
+          <li><a href="http://www.letje.nl">Home</a></li>
+          <li><a href="aanbod">Aanbod</a></li>
+          <li><a href="voorbeelden">Voorbeelden</a></li>
+          <li><a href="contact" class="activenavsmall">Contact</a></li>
+          <li><a href="overons">Over ons</a></li>
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
@@ -82,7 +82,7 @@
         <div class="row">
           <div class="input-field col s12">
             <i class="material-icons prefix">perm_identity</i>
-            <input id="first_name" type="text" class="validate" name="name">
+            <input id="first_name" type="text" class="validate" name="Naam">
             <label for="name">Naam</label>
           </div>
 
@@ -91,7 +91,7 @@
         <div class="row">
           <div class="input-field col s12">
             <i class="material-icons prefix">email</i>
-            <input id="email" type="text" class="validate" name="_replyto">
+            <input id="email" type="text" class="validate" name="Email">
             <label for="email">Email</label>
           </div>
         </div>
@@ -99,14 +99,16 @@
         <div class="row">
           <div class="input-field col s12">
             <i class="material-icons prefix">mode_edit</i>
-            <textarea id="textarea1" class="materialize-textarea"></textarea>
+            <textarea id="textarea1" class="materialize-textarea" name="Bericht"></textarea>
             <label for="bericht">Bericht</label>
           </div>
         </div>
 
         <div class="row">
           <div class="input-field col s12">
-            <input type="submit" value="Send">
+            <button class="btn waves-effect waves-light blauw" type="submit" name="action" value="Send">Verzenden
+              <i class="material-icons right">send</i>
+            </button>
           </div>
         </div>
 
