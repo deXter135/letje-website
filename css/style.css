@@ -25,3 +25,16 @@ p {
 .lijn {
   border-bottom: 1px solid lightgrey
 }
+
+.logo-navbar {
+  width: 100px;
+  margin-top: 7px;
+}
+
+.activenav {
+  background-color: #009bd6;
+}
+
+.activenavsmall { 
+  background-color: lightgrey;
+}

@@ -16,21 +16,21 @@
   <div class="navbar-fixed">
     <nav class="blauw" role="navigation">
       <div class="nav-wrapper container">
-
-        <ul class="center hide-on-med-and-down">
+        <a href="index.html" class="brand-logo"><img src="img/logo_inv.png" class="logo-navbar"/></a>
+        <ul class="right hide-on-med-and-down">
           <li><a href="index.html">Home</a></li>
           <li><a href="aanbod.html">Aanbod</a></li>
           <li><a href="voorbeelden.html">Voorbeelden</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="overons.html" class="active">Over ons</a></li>
+          <li><a href="contact.html" class="activenav">Contact</a></li>
+          <li><a href="overons.html">Over ons</a></li>
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
           <li><a href="index.html">Home</a></li>
           <li><a href="aanbod.html">Aanbod</a></li>
           <li><a href="voorbeelden.html">Voorbeelden</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="overons.html" class="active">Over ons</a></li>
+          <li><a href="contact.html" class="activenavsmall">Contact</a></li>
+          <li><a href="overons.html">Over ons</a></li>
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
@@ -58,9 +58,7 @@
       <div class="col s2">
           <p>Email:</p>
           <p>Telefoon:</p>
-          <p>Facebook</p>
-          <p>Google+</p>
-          <p>Twitter</p>
+          <iframe src="https://www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Fletje.nl%2F%3Fref%3Dbr_rs&width=450&height=80&layout=standard&size=large&show_faces=true&appId" width="450" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
       </div>
       <div class="col s10">
         <p>info@letje.nl</p>
@@ -80,23 +78,20 @@
 
   <div class="container">
     <div class="row">
-      <form class="col s12">
+      <form class="col s12" action="https://formspree.io/info@letje.nl" method="POST">
         <div class="row">
-          <div class="input-field col m6 s12">
+          <div class="input-field col s12">
             <i class="material-icons prefix">perm_identity</i>
-            <input id="first_name" type="text" class="validate">
-            <label for="first_name">Voornaam</label>
+            <input id="first_name" type="text" class="validate" name="name">
+            <label for="name">Naam</label>
           </div>
-          <div class="input-field col m6 s12">
-            <input id="last_name" type="text" class="validate">
-            <label for="last_name">Achternaam</label>
-          </div>
+
         </div>
 
         <div class="row">
           <div class="input-field col s12">
             <i class="material-icons prefix">email</i>
-            <input id="email" type="text" class="validate">
+            <input id="email" type="text" class="validate" name="_replyto">
             <label for="email">Email</label>
           </div>
         </div>
@@ -106,6 +101,12 @@
             <i class="material-icons prefix">mode_edit</i>
             <textarea id="textarea1" class="materialize-textarea"></textarea>
             <label for="bericht">Bericht</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <input type="submit" value="Send">
           </div>
         </div>
 
@@ -123,10 +124,7 @@
               <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Verbinden</h5>
                 <ul>
-                  <li><a class="white-text" href="#!">Link 1</a></li>
-                  <li><a class="white-text" href="#!">Link 2</a></li>
-                  <li><a class="white-text" href="#!">Link 3</a></li>
-                  <li><a class="white-text" href="#!">Link 4</a></li>
+                  <li><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fletje.nl%2F%3Fref%3Dbr_rs&width=200&layout=standard&action=like&size=small&show_faces=true&share=true&height=80&appId" width="200" height="100" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></li>
                 </ul>
               </div>
             </div>
@@ -134,7 +132,6 @@
           <div class="footer-copyright">
             <div class="container">
             Copyright &copy; 2016 Letje BV. All Rights Reserved
-            <a class="white-text right" href="#!">More Links</a>
             </div>
           </div>
         </footer>
