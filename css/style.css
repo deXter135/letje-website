@@ -35,6 +35,15 @@ p {
   background-color: #009bd6;
 }
 
-.activenavsmall { 
+.activenavsmall {
   background-color: lightgrey;
+}
+
+.verbindbutton {
+  transition: all 0.5s;
+  transform-origin: 50% 50%;
+}
+
+.verbindbutton:hover {
+  transform: scale(1.5);
 }
