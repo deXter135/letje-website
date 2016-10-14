@@ -6,13 +6,85 @@
   <title>Letje - Professionele branding voor een lage prijs</title>
 
   <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <style>
+  .icon-block {
+    padding: 0 15px;
+  }
+  .icon-block .material-icons {
+  	font-size: inherit;
+  }
+
+  p {
+    font-size: 17px;
+  }
+
+  .image-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .lijn {
+    border-bottom: 1px solid lightgrey
+  }
+
+  .logo-navbar {
+    width: 100px;
+    margin-top: 7px;
+  }
+
+  .activenav {
+    background-color: #009bd6;
+  }
+
+  .activenavsmall {
+    background-color: lightgrey;
+  }
+
+  .verbindbutton {
+    transition: all 0.5s;
+    transform-origin: 50% 50%;
+  }
+
+  @media screen and (min-width: 900px) {
+    .verbindbutton {
+      transition: all 0.5s;
+      transform-origin: 50% 50%;
+    }
+    .verbindbutton:hover {
+      transform: scale(1.5);
+    }
+}
+
+  @font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://fonts.gstatic.com/s/materialicons/v18/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2');
+  }
+
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }
+  </style>
 </head>
 
 
 <body>
+
 
   <div class="navbar-fixed">
     <nav class="blauw" role="navigation">
@@ -38,6 +110,7 @@
     </nav>
   </div>
 
+
   <div class="container">
     <div class="row">
       <div class="col s12">
@@ -56,17 +129,21 @@
     </div>
 
     <div class="row">
-      <div class="col l3 s3">
+      <div class="col s3">
           <p class="black-text">Email:</p>
           <p class="black-text">Telefoon:</p>
+          <p class="black-text">Kvk:</p>
       </div>
-      <div class="col l9 s9">
+      <div class="col s9">
         <p><a href="mailto:info@letje.nl">info@letje.nl</a></p>
         <p><a href="tel:+0610615706">06-10615706</a></p>
-
+        <p><a href="https://www.kvk.nl/orderstraat/product-kiezen/?kvknummer=670525920000&origq=67052592">67052592</a></p>
       </div>
     </div>
+  </div>
 
+
+    <div class="container">
     <div class="row">
       <div class="col s12">
         <h6><br></h6>
@@ -76,9 +153,9 @@
         <h6><br></h6>
       </div>
     </div>
-  </div>
 
-  <div class="container">
+
+
       <form class="col s12" action="https://formspree.io/info@letje.nl" method="POST">
         <div class="row">
           <div class="input-field col s12">
@@ -106,11 +183,18 @@
         </div>
 
         <div class="row">
-          <div class="col s12">
-            <div class="input-field col s12">
+        </div>
 
-            </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <button class="btn waves-effect waves-light blauw" type="submit" name="action" value="Send">Verzenden
+            <i class="material-icons right">send</i>
           </div>
+        </div>
+
+        <div class="row">
+        </div>
+        <div class="row">
         </div>
 
       </form>
