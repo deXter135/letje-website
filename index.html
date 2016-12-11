@@ -85,7 +85,16 @@ Copyright Letje 2016 - All rights reserved
             -webkit-font-feature-settings: 'liga';
             -webkit-font-smoothing: antialiased;
         }
-    </style>
+
+        #background {
+          -webkit-filter: blur(5px) opacity(30%); /* Safari 6.0 - 9.0 */
+          filter: blur(5px) opacity(30%);
+        }
+
+        #logo {
+
+        }
+        </style>
 </head>
 
 
@@ -116,31 +125,36 @@ Copyright Letje 2016 - All rights reserved
     </div>
 
 
-    <div>
-        <div class="container">
-            <div class="row center">
-                <h5 class="header col s12 black-text">Complete professionele branding, voor een lage prijs</h5>
-            </div>
-            <div class="row center">
-                <a href="aanbod" id="download-button" class="btn-large waves-effect waves-light geel">Bekijk ons aanbod</a>
-            </div>
-            <br><br>
 
+
+    <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <br><br>
+                <h1 class="header center blauw-text"><img id="logo" src="img/logo.svg" width="40%" height="40%"/></h1>
+                <div class="row center">
+                    <h5 class="header col s12 black-text" style="text-shadow: 1px 1px #ffffff;">Complete professionele branding, voor een lage prijs</h5>
+                </div>
+                <div class="row center">
+                    <a href="aanbod" id="download-button" class="btn-large waves-effect waves-light geel lighten-1">Bekijk ons aanbod</a>
+                </div>
+                <br><br>
+            </div>
         </div>
+        <div class="parallax"><img id="background" src="img/achtergrondKlein.jpg" width="1920px"/></div>
+        <br><br>
     </div>
 
 
     <div class="container">
         <div class="section">
+          <br><br>
 
             <!--   Icon Section   -->
             <div class="row">
                 <div class="col s12 m4">
                     <div class="icon-block">
-                        <h2 class="center blauw-text">
-              <i class="material-icons">card_travel</i>
-            </h2>
-                        <h5 class="center black-text">Compleet pakket</h5>
+                        <h5 class="center blauw-text">Compleet pakket</h5>
 
                         <p class="black-text" align="justify">Wij bieden een alles-in-een branding pakket aan. Zo heeft u in één keer alles wat u nodig heeft. Van logo en website tot aan banners en stickers, alles is mogelijk. U kunt uw eigen pakket samenstellen.</p>
                     </div>
@@ -148,18 +162,14 @@ Copyright Letje 2016 - All rights reserved
 
                 <div class="col s12 m4">
                     <div class="icon-block">
-                        <h2 class="center blauw-text"><i class="material-icons">favorite</i></h2>
-                        <h5 class="center black-text">Precies wat u wilt</h5>
-
+                        <h5 class="center blauw-text">Precies wat u wilt</h5>
                         <p class="black-text" align="justify">Via een aantal gesprekken komen wij er achter wat uw wensen zijn. Hier passen wij onze ontwerpen op aan. Zo wordt uw merk en uw branding precies zoals u het wilt.</p>
                     </div>
                 </div>
 
                 <div class="col s12 m4">
                     <div class="icon-block">
-                        <h2 class="center blauw-text"><i class="material-icons">euro_symbol</i></h2>
-                        <h5 class="center black-text">Lage prijs</h5>
-
+                        <h5 class="center blauw-text">Breede kennis</h5>
                         <p class="black-text" align="justify">Wij kunnen u zeer scherpe prijzen bieden, die u nergens anders zult tegen komen. Gegarandeerd lager dan bij onze concurrenten.</p>
                     </div>
                 </div>

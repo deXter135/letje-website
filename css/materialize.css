@@ -881,7 +881,6 @@ img.responsive-img, video.responsive-video {
 }
 
 .parallax img {
-    display: none;
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -891,6 +890,12 @@ img.responsive-img, video.responsive-video {
     transform: translate3d(0, 0, 0);
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+    transform: translateZ(0);
+    -moz-transform: translatez(0);
+    -ms-transform: translatez(0);
+    -o-transform: translatez(0);
+    -webkit-transform: translateZ(0);
+    -webkit-font-smoothing: antialiased;
 }
 
 .pin-top, .pin-bottom {
