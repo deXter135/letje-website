@@ -86,14 +86,19 @@ Copyright Letje 2016 - All rights reserved
             -webkit-font-smoothing: antialiased;
         }
 
-        #background {
-        }
-
         #index-banner {
             -webkit-box-shadow: inset 0px -77px 96px -75px rgba(0, 0, 0, 0.75);
             -moz-box-shadow: inset 0px -77px 96px -75px rgba(0, 0, 0, 0.75);
             box-shadow: inset 0px -77px 96px -75px rgba(0, 0, 0, 0.75);
         }
+
+        .centercenter {
+          position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+        }
+
     </style>
 </head>
 
@@ -129,18 +134,17 @@ Copyright Letje 2016 - All rights reserved
 
     <div id="index-banner" class="parallax-container">
         <div class="section no-pad-bot">
-            <div class="container">
-                <br><br>
+            <div class="container  centercenter">
                 <h1 class="header center blauw-text"><img id="logo" src="img/logo.svg" width="300px"/></h1>
                 <div class="row center">
-                    <h5 class="header col s12 black-text" style="text-shadow: 1px 1px #ffffff;">Complete professionele branding, voor een lage prijs</h5>
+                    <h4 class="header col s12 black-text" style="text-shadow: 1px 1px #ffffff;">Uw visie. Uw uitstraling. Uw merk.</h4>
                 </div>
                 <div class="row center">
                     <a href="aanbod" id="download-button" class="btn-large waves-effect waves-light geel lighten-1">Bekijk ons aanbod</a>
                 </div>
             </div>
         </div>
-        <div class="parallax"><img id="background" src="img/achtergrondKlein.png" width="1920px" /></div>
+        <div class="parallax"><img id="background" src="img/achtergrondKlein.png" width="100vw" /></div>
     </div>
 
 
