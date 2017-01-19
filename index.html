@@ -93,16 +93,46 @@ Copyright Letje 2016 - All rights reserved
         }
 
         #hideBeforeScroll {
-          display: none;
+            display: none;
         }
 
         .centercenter {
-          position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
+        .arrows {
+            width: 60px;
+            height: 72px;
+            position: absolute;
+            left: 50%;
+            margin-left: -30px;
+            bottom: 20px;
+        }
+
+        .arrows path {
+            stroke: #00aeef;
+            fill: transparent;
+            stroke-width: 1px;
+            -webkit-transition: stroke-width 0.5s; /* For Safari 3.1 to 6.0 */
+            transition: stroke-width 0.5s;
+        }
+
+        .arrows path:hover {
+            stroke-width: 3px;
+        }
+
+        @keyframes arrow {
+
+        }
+
+        @-webkit-keyframes arrow
+        /*Safari and Chrome*/
+
+        {
+        }
     </style>
 </head>
 
@@ -116,7 +146,7 @@ transform: translate(-50%, -50%);
                 <ul class="right hide-on-med-and-down">
                     <li><a href="http://www.letje.nl" class="activenav">Home</a></li>
                     <li><a href="aanbod">Aanbod</a></li>
-                    <li><a href="voorbeelden">Voorbeelden</a></li>
+                    <li><a href="voorbeelden">Impressie</a></li>
                     <li><a href="contact">Contact</a></li>
                     <li><a href="overons">Over ons</a></li>
                 </ul>
@@ -124,7 +154,7 @@ transform: translate(-50%, -50%);
                 <ul id="nav-mobile" class="side-nav">
                     <li><a href="http://www.letje.nl" class- "activenavsmall">Home</a></li>
                     <li><a href="aanbod">Aanbod</a></li>
-                    <li><a href="voorbeelden">Voorbeelden</a></li>
+                    <li><a href="voorbeelden">Impressie</a></li>
                     <li><a href="contact">Contact</a></li>
                     <li><a href="overons">Over ons</a></li>
                 </ul>
@@ -149,6 +179,11 @@ transform: translate(-50%, -50%);
             </div>
         </div>
         <div class="parallax"><img id="background" src="img/achtergrondKlein.png" width="100vw" /></div>
+        <a href="#link-to">
+        <svg class="arrows">
+							<path class="a1" d="M0 0 L30 32 L60 0"></path>
+            </svg>
+          </a>
     </div>
 
 
@@ -157,7 +192,7 @@ transform: translate(-50%, -50%);
             <br><br>
             <div class="row">
                 <div class="col s12">
-                    <h4 class="header blauw-text center">Onze kernpunten:</h4>
+                    <h4 id="link-to" class="header blauw-text center">Onze kernpunten:</h4>
                 </div>
             </div>
 
@@ -186,10 +221,6 @@ transform: translate(-50%, -50%);
                     </div>
                 </div>
             </div>
-
-        </div>
-
-        <div class="section">
 
         </div>
     </div>
@@ -224,7 +255,8 @@ transform: translate(-50%, -50%);
             <div class="container">
                 <div class="row" style="margin-bottom: 0px;">
                     <div class="col l8 s12">
-                        <a class="white-text" href="algemene_voorwaarden.pdf">Algemene voorwaarden</a> | <a class="white-text" href="disclaimer.pdf">Disclaimer</a> | <a class="white-text" href="#">Privacy policy</a> | <a class="white-text" href="#">Sitemap</a>
+                        <a class="white-text" href="algemene_voorwaarden.pdf">Algemene voorwaarden</a> | <a class="white-text" href="disclaimer.pdf">Disclaimer</a> | <a class="white-text" href="privacy policy.pdf">Privacy policy</a> | <a class="white-text"
+                            href="#">Sitemap</a>
                     </div>
                     <div class="col l4 s12 ">
                         Copyright &copy; 2016 Letje
