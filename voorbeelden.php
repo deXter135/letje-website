@@ -115,41 +115,42 @@ Copyright Letje 2016 - All rights reserved
 	</div>
 
 	<div class="container">
+		<br><br>
 		<div class="row">
-			<div class="col s12 m4">
-				<a href="http://www.martijndekker.net/">
-					<div class="card blue-grey darken-1">
-						<div class="card-image">
-							<img src="img/martijndekker.net.png">
-						</div>
-						<div class="card-content black-text">
-							<span class="card-title">Martijndekker.net</span>
-							<p>De persoonlijke website van Martijn Dekker is ontwikkeld door Letje. Op deze website zal in de toekomst het portfolio van Martijn te vinden zijn. </p>
-						</div>
-					</div>
-				</a>
-			</div>
 			<div class="col s12 m4">
 				<div class="card blue-grey darken-1">
 					<div class="card-image">
 						<img src="img/impressie.jpg">
 					</div>
 					<div class="card-content black-text">
-						<span class="card-title">Logo ontwerpen</span>
-						<p>Hier ziet u een impressie van logo's die wij gemaakt hebben. </p>
+						<span class="card-title">Impressie logo ontwerpen</span>
+						<p>Om u een impressie te geven van onze verschillende stijlen heeft Letje een collage gemaakt van eerdere ontwerpen. Deze stijlen voeren wij door in logo’s, visitekaartjes, websites en overig materiaal.</p>
 					</div>
 				</div>
 			</div>
 			<div class="col s12 m4">
 				<div class="card blue-grey darken-1">
 					<div class="card-image">
-						<iframe src="https://player.vimeo.com/video/196213214" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/196213214' frameborder='0'></iframe></div>
 					</div>
 					<div class="card-content black-text">
 						<span class="card-title">Communifridge</span>
-						<p>Om het concept van de Communifridge uit te leggen heeft letje een animatie video gemaakt.</p>
+						<p>Om het concept van de Communifridge uit te leggen heeft Letje een animatie video gemaakt. Een animatie video is uitermate geschikt om concepten of ideeen uit te leggen. Letje gaat graag met uw in gesprek over de mogelijkheden.</p>
 					</div>
 				</div>
+			</div>
+			<div class="col s12 m4">
+				<a href="http://www.martijndekker.net/">
+					<div class="card blue-grey darken-1 hoverable">
+						<div class="card-image">
+							<img src="img/martijndekker.net.png">
+						</div>
+						<div class="card-content black-text">
+							<span class="card-title">Personal Branding</span>
+							<p>Een voorbeeld van een totaalpakket: persoonlijke branding met logo, website, visitekaartjes. Door onze brede kennis kan Letje u zeer goed helpen met het ontwikkelen van uw persoonlijke merk. </p>
+						</div>
+					</div>
+				</a>
 			</div>
 		</div>
 	</div>

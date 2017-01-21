@@ -160,38 +160,63 @@ Copyright Letje 2016 - All rights reserved
 
             <div class="col l6 s12">
                 <h4 class="header black-text lijn">Contactformulier</h4>
-                <h6><br></h6>
-                <h6><br></h6>
-                <h6><br></h6>
             </div>
 
-            <form class="col l6 s12" action="https://formspree.io/info@letje.nl" method="POST">
-                <div class="input-field">
-                    <i class="material-icons prefix">perm_identity</i>
-                    <input id="first_name" type="text" class="validate" name="Naam">
-                    <label for="name">Naam</label>
-                    <br>
-                </div>
 
-                <div class="input-field">
-                    <i class="material-icons prefix">email</i>
-                    <input id="email" type="text" class="validate" name="Email">
-                    <label for="email">Email</label>
-                    <br>
-                </div>
 
-                <div class="input-field">
-                    <i class="material-icons prefix">mode_edit</i>
-                    <textarea id="textarea1" class="materialize-textarea" name="Bericht"></textarea>
-                    <label for="bericht">Bericht</label>
-                    <br>
-                </div>
+      <?php
+      $action=$_REQUEST['action'];
+      if ($action=="")    /* display the contact form */
+          {
+          ?>
 
-                <div class="input-field">
-                    <button class="btn waves-effect waves-light blauw" type="submit" name="action" value="Send">Verzenden
-            <i class="material-icons right">send</i>
+      <form class="col l6 s12" name="contactform" method="POST" action="" enctype="multipart/form-data">
+          <div class="input-field">
+              <i class="material-icons prefix">perm_identity</i>
+              <input id="first_name" type="text" class="validate" name="naam">
+              <label for="name">Naam</label>
+              <br>
           </div>
-      </form>
+
+          <div class="input-field">
+              <i class="material-icons prefix">email</i>
+              <input id="email" type="text" class="validate" name="email">
+              <label for="email">Email</label>
+              <br>
+          </div>
+
+          <div class="input-field">
+              <i class="material-icons prefix">mode_edit</i>
+              <textarea id="textarea1" class="materialize-textarea" name="bericht"></textarea>
+              <label for="bericht">Bericht</label>
+              <br>
+          </div>
+
+          <div class="input-field">
+              <button class="btn waves-effect waves-light blauw" type="submit" name="action" value="send">Verzenden
+    </div>
+</form>
+
+    <?php
+    }
+else                /* send the submitted data */
+    {
+    $name=$_REQUEST['naam'];
+    $email=$_REQUEST['email'];
+    $message=$_REQUEST['bericht'];
+    if (($name=="")||($email=="")||($message==""))
+        {
+		echo "<p><br>Alle velden zijn verplicht, vul alstublieft <a href=\"\">het formulier</a> opnieuw in.</p>";
+	    }
+    else{
+	    $from="From: $name<$email>\r\nReturn-path: $email";
+        $subject="[Bericht via de website]";
+		mail("info@letje.nl", $subject, $message, $from);
+		echo "<p><br>Uw bericht is verzonden. Wij nemen zo snel mogelijk contact met uw op.<br><br><a href=\"\">Nog een bericht verzenden?</a></p>";
+	    }
+    }
+?>
+
   </div>
   <div class="row">
     <h6><br></h6>
