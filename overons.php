@@ -10,10 +10,10 @@ Copyright Letje 2016 - All rights reserved
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
 
-    <title>Letje - Professionele branding voor een lage prijs</title>
+    <title>Letje - Uw visie. Uw uitstraling. Uw merk.</title>
 
-    <meta name="keywords" content="Professionele branding voor een lage prijs" />
-    <meta name="description" content="Professionele branding voor een lage prijs" />
+    <meta name="keywords" content="website, logo, merk, persoonlijk, ontwerp, design, promotie, reclame, visitekaartjes" />
+    <meta name="description" content="Letje biedt u promotie design, logo's, visitekaartjes, websites, filmpjes en meer! Wij streven ernaar om het karakter van uw bedrijf visueel zo sterk mogelijk naar buiten te brengen." />
 
     <!-- CSS  -->
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
@@ -97,7 +97,7 @@ Copyright Letje 2016 - All rights reserved
                 <ul class="right hide-on-med-and-down">
                     <li><a href="http://www.letje.nl">Home</a></li>
                     <li><a href="aanbod">Aanbod</a></li>
-                    <li><a href="voorbeelden">Impressie</a></li>
+                    <li><a href="impressie">Impressie</a></li>
                     <li><a href="contact">Contact</a></li>
                     <li><a href="overons" class="activenav">Over ons</a></li>
                 </ul>
@@ -105,7 +105,7 @@ Copyright Letje 2016 - All rights reserved
                 <ul id="nav-mobile" class="side-nav">
                     <li><a href="http://www.letje.nl">Home</a></li>
                     <li><a href="aanbod">Aanbod</a></li>
-                    <li><a href="voorbeelden">Impressie</a></li>
+                    <li><a href="impressie">Impressie</a></li>
                     <li><a href="contact">Contact</a></li>
                     <li><a href="overons" class="activenavsmall">Over ons</a></li>
                 </ul>
